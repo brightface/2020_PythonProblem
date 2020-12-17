@@ -1,5 +1,5 @@
 import sys
-#sys.stdin = open("input.txt")
+sys.stdin = open("input.txt")
 
 n , max_weight = map(int,input().split())
 # print(n,max_weight)
@@ -19,5 +19,5 @@ for i in range(n):
             dy[j] = max(dy[j-info[i][0]]+info[i][1],dy[j])
         #else:
          #   break
-#print(dy)
+print(dy)
 print(max(dy))
