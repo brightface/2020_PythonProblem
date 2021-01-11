@@ -10,6 +10,7 @@ for i in range(n):
 for i in range(1,n):
     for j in range(1,n):
         dy[i][j] = min(dy[i-1][j], dy[i][j-1]) + arr[i][j]
+#dfs,bfs로 안하고 동적프로그래밍으로도 할수 있구나.
 
 #print(dy)
 print(dy[n-1][n-1])
